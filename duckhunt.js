@@ -1,24 +1,4 @@
 
-let ducks;
-let duckCount = 1;
-let duckImageNames = ["duck-left.gif", "duck-right.gif"];
-let duckWidth = 96;
-let duckHeight = 93;
-let duckVelocityX = 5;
-let duckVelocityY = 5;
-
-let gameWidth = window.screen.width;
-let gameHeight = window.screen.height*3/4;
-
-let score = 0;
-
-window.onload = function() {
-    // addDucks();
-    setTimeout(addDucks, 2000); //wait 2 seconds
-    setInterval(moveDucks, 1000/60); //60 frames per second
-}
-
-=======
 const startOverlay = document.getElementById('start-overlay');
 const gameCanvas = document.getElementById('gameCanvas');
 let ducks = [];
@@ -127,8 +107,6 @@ function restartGame() {
         }
     
 
-
->>>>>>> Stashed changes
 function addDucks() {
     ducks = [];
     duckCount = Math.floor(Math.random()*2) + 1;
@@ -160,11 +138,7 @@ function addDucks() {
             ducks = remaining_ducks;
             if (ducks.length == 0) {
                 addDog(duckCount);
-<<<<<<< Updated upstream
-=======
-               
-               
->>>>>>> Stashed changes
+
             }
         }
         document.body.appendChild(duckImage);
@@ -189,10 +163,7 @@ function addDucks() {
 }
 
 function moveDucks() {
-<<<<<<< Updated upstream
-=======
-    
->>>>>>> Stashed changes
+
     for (let i = 0 ; i < ducks.length; i++) {
         let duck = ducks[i];
         duck.x += duck.velocityX;
@@ -213,8 +184,7 @@ function moveDucks() {
         duck.image.style.left = String(duck.x) + "px";
         duck.image.style.top = String(duck.y) + "px";
     }
-<<<<<<< Updated upstream
-=======
+
 
     let wingSoundPlayed = false;
 
@@ -246,7 +216,6 @@ document.addEventListener('click', playWingSound, { onclick: true });
 // For the specific line `wingSound.play();`, remove it from its current
 // position (e.g., inside `moveDucks` or `window.onload` if it's called immediately).
 
->>>>>>> Stashed changes
 }
 
 function addDog(duckCount) {
@@ -269,25 +238,14 @@ function addDog(duckCount) {
 
     let dogScoreSound = new Audio("dog-score.mp3");
     dogScoreSound.play();
-<<<<<<< Updated upstream
+
 
     setTimeout(function() {
         document.body.removeChild(dogImage);
         addDucks();
-=======
-      
-    setTimeout(function() {
-        document.body.removeChild(dogImage);
-        addDucks();
-      
->>>>>>> Stashed changes
     }, 5000); //5000ms = 5 seconds
 }
 
 function randomPosition(limit) {
     return Math.floor((Math.random() * limit));
-<<<<<<< Updated upstream
 }
-=======
-}
-
