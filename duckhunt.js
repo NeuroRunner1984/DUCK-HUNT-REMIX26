@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 let ducks;
 let duckCount = 1;
 let duckImageNames = ["duck-left.gif", "duck-right.gif"];
@@ -291,4 +291,3 @@ function randomPosition(limit) {
 =======
 }
 
->>>>>>> Stashed changes
