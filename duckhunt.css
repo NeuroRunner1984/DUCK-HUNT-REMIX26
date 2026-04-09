@@ -1,0 +1,247 @@
+
+
+  
+   @media (min-width: 5em) and (min-height: 5em)
+   {
+
+   body {
+    background: url("./No_Background_duck-hunt.png"), url("./duck-hunt-logo.png");
+    background-position:  center auto, 20% right;
+    background-repeat:repeat, repeat;
+    background-size: cover, auto; 
+    background-attachment:auto, auto ;    
+    cursor: url("./target.png"), auto;
+    max-width: 600vh;
+    max-height: 400vh; 
+    
+ }}
+
+
+
+@font-face {
+    font-family: gameFont;
+    src: url("game-font.otf");
+}
+@media (min-width: 5em) and (min-height: 5em) {
+ #gameArea {
+   padding: 0 auto;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    max-height: auto;
+  
+    
+} }
+
+#score {
+<<<<<<< Updated upstream
+    font-size: 30px;
+    font-family: gameFont;  
+    color: white;
+
+    user-select: none;
+    -webkit-user-select: none;      /* Chrome, Opera */
+    -webkit-touch-callout: none;    /* Safari */
+    -moz-user-select: none;         /* Firefox */
+    -ms-user-select: none;          /* Internet Explorer/Edge */
+}
+
+img {
+    user-select: none;
+    -webkit-user-select: none;      /* Chrome, Opera */
+    -webkit-touch-callout: none;    /* Safari */
+    -moz-user-select: none;         /* Firefox */
+    -ms-user-select: none;          /* Internet Explorer/Edge */
+}
+=======
+    font-size: 5vh;
+    font-family: gameFont;  
+    color:rgb(255, 165, 0);
+  max-width: 100%;
+  max-height: auto;
+  padding-left: 0.3em;
+}
+
+
+#timer {
+     font-size: 5vh;
+    font-family: gameFont;  
+    color:rgb(10, 40, 236);
+    max-width: 100%;
+    max-height: auto;
+    padding-left: 0.3em;
+}
+@media (min-width: 5em) and (min-height: 5em) {
+#gameOverScreen h3{
+      font-family: gameFont;  
+       color:rgb(255, 0, 0);
+    font-size: 5em;
+    position:relative;
+   text-align: center;
+   /* max-width: 100%;
+   max-height: auto;    */
+}}
+
+#restartButton {
+   font-family: gameFont; 
+    animation: blinker 1s linear infinite;
+    font-size: 0.9em; 
+    color: rgb(250, 8, 218);
+    background-color: rgb(235, 132, 7);
+    padding: 1em 1em;
+    border-radius: 12px;
+    border-color: rgb(255, 0, 153);
+    border-style: double;
+    position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    display: inline;
+     margin-top: 1em; 
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1; /* Text is fully visible at the start and end */
+  }
+  50% {
+    opacity: 0; /* Text is fully transparent halfway through */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 5em) and (min-height: 5em) {
+#gameCanvas {
+    background-color: #a22000;
+   border: 2vh dotted rgba(247, 239, 77, 0.69);  
+   border-radius: 0.6em;
+  position: absolute; 
+  margin-top: 25vh;
+ top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: 100% auto;
+  overflow: hidden;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}}
+
+.overlay {
+    font: gameFont ;
+    position: absolute;
+     top: 16em;
+    bottom: 5em;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    color: rgb(141, 234, 239);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; 
+    text-align: center;
+}
+
+.overlay h1 {
+     font-family: gameFont;
+    color: #f18614;; 
+    font-size: 6em;
+    position: absolute;
+      top: -2em;
+     left: 0; 
+     right: 0; 
+      margin: 0 auto;
+    width: 100%; 
+    height: auto;
+}
+
+.stamp-container h2 {
+  left:0.3em;
+  top: 2.5em;
+  position:relative;
+  background-color:transparent;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-delay:1.0s;
+  -webkit-animation-delay:1.0s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode:forwards;
+   animation-fill-mode:forwards;
+  transform: rotate(12deg);
+	color: #10c0df;
+	font-size: 10vh;
+  font-stretch: 100%;
+	font-weight: 700;
+	border: 0.5rem solid #10c0df;
+  border-radius: 0;
+	display: block;
+	padding: 0.02em 0.0em;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	font-family: 'Courier';
+  mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+  syntax: auto 100%;
+  mix-blend-mode: multiply;
+  width: 100% auto;
+  height: auto;
+   z-index: 5; 
+} 
+
+@keyframes pulse{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity:.50;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100%{
+    opacity:1;
+    transform: rotate(-15deg) scale(1);
+  }
+}
+
+
+
+
+
+.overlay p {
+    font-family: gameFont;
+    color: rgb(243, 10, 235); 
+    font-weight: 700;
+    animation: blinker 3s linear infinite;  
+    font-size: 2em;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: auto;
+     z-index: 10; 
+
+}
+
+ #startGameButton{
+    font-family: gameFont;
+    color: rgb(21, 237, 154);
+    margin-top: auto;
+    padding: 0.5em 0.5em;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 12px;  
+    background-color: aliceblue;
+    transition: background 0.3s ease-in-out;
+    border-color: rgba(94, 183, 242, 0.702);
+}
+
+
+>>>>>>> Stashed changes

@@ -1,6 +1,3 @@
-# DUCK-HUNT-REMIX26
-A demo of a classic NES video game, showcasing my ability to primarily use JavaScript, HTML-5, and CSS.  
-
 This demo game is a "REMIX" of a game I made that was initially made following a tutorial that be found below:
 
 # [Duck Hunt](https://youtu.be/YGBi4lR0swY)
